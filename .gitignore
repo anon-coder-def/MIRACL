@@ -1,0 +1,14 @@
+data/
+newdata/
+results/
+*data_files*
+*.err*
+*.out*
+*.csv*
+checkpoints/
+mymodel/
+MIMIC/
+transform_data
+physionet.org/
+*.npy*
+visualizations/
