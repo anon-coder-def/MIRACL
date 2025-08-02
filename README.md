@@ -2,11 +2,11 @@
 This is the formal implementation of our paper: "MIRACL: A Robust Multi-Label Learning Framework on Noisy Multimodal Electronic Health Records".
 
 ## Abstracts
-Multimodal Electronic Health Records (EHR), comprising structured time-series data and unstructured clinical notes, offer complementary views of patient health. However, multi-label prediction tasks such as phenotyping are hindered by potential label noise, including false positives and negatives. Existing noisy-label learning methods, often designed for single-label vision data, fail to capture clean label dependencies or account for the cross-modal, longitudinal nature of EHRs.
-To address this, we propose MIRACL (\textbf{M}ultimodal \textbf{I}nstance \textbf{R}elabelling \textbf{A}nd \textbf{C}orrection for multi-\textbf{L}abel noise (MIRACL\footnote{\url{https://github.com/anon-coder-def/MIRACL}}), a novel framework that systematically addresses these challenges.  More importantly, MIRACL is the first framework designed to explicitly leverage longitudinal patient context to resolve more challenging multi-label noise scenarios. To achieve this, MIRACL unifies three synergistic mechanisms:
-(1) a patient-level contrastive regularisation loss that leverages both cross-modal and longitudinal patient context to correct for noisy supervision across different visits, 
-(2) a difficulty- and rank-based metric for robust identification of noisy instance-label pairs, and 
-(3) a class-aware correction module for robust label refinements, promoting the recovery of clean label dependencies.
+Multimodal Electronic Health Records (EHRs), comprising structured time-series data and unstructured clinical notes, offer complementary views of patient health. However, multi-label prediction tasks on multimodal EHR data, such as phenotyping, are hindered by potential label noise, including false positives and negatives. Existing noisy-label learning methods, often designed for single-label vision data, fail to capture real label-dependencies or account for the cross-modal, longitudinal nature of EHRs.
+To address this, we propose MIRACL (\textbf{M}ultimodal \textbf{I}nstance \textbf{R}elabelling \textbf{A}nd \textbf{C}orrection for multi-\textbf{L}abel noise (MIRACL\footnote{\url{https://github.com/anon-coder-def/MIRACL }}), a novel framework that systematically addresses these challenges.  Notably, MIRACL is the first framework designed to explicitly leverage longitudinal patient context to resolve more challenging multi-label noise scenarios. To achieve this, MIRACL unifies three synergistic mechanisms:
+(1) a difficulty- and rank-based metric for robust identification of noisy instance-label pairs, 
+(2) a class-aware correction module for robust label refinements, promoting the recovery of real label-dependencies, and
+(3) a patient-level contrastive regularization loss that leverages both cross-modal and longitudinal patient context to correct for noisy supervision across different visits.
 Extensive experiments on large-scale multimodal EHR datasets (MIMIC-III/IV) demonstrate that MIRACL achieves state-of-the-art robustness, improving test mAP by over 2\% under various noise levels.
 
 <div align="center">
